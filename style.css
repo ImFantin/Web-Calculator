@@ -1,18 +1,18 @@
 :root {
-    --background: #e78505;
-    --font: #222;
+    --background: #fb8500;
+    --font: #023047;
     --border: #585858;
-    --screen: #eee;
-    --calculator: #1a1919;
-    --btn: #eee;
-    --btn-hover: #ddd;
-    --btn-active: #ccc;
-    --btn-red: #faa;
-    --btn-red-hover: #e99;
-    --btn-red-active: #d88;
-    --btn-blue: #aaf;
-    --btn-blue-hover: #99e;
-    --btn-blue-active: #88d;
+    --screen: #eeeeee;
+    --calculator: #023047;
+    --btn: #eeeeee;
+    --btn-hover: #dddddd;
+    --btn-active: #cccccc;
+    --btn-orange: #ffb703;
+    --btn-orange-hover: #ffab03;
+    --btn-orange-active: #ff9503;
+    --btn-blue: #8ecae6;
+    --btn-blue-hover: #7ecae6;
+    --btn-blue-active: #6ecae6;
   }
   
 * {
@@ -110,15 +110,15 @@ button {
 }
 
 .btn-red {
-  background-color: var(--btn-red);
+  background-color: var(--btn-orange);
 }
 
 .btn-red:hover {
-  background-color: var(--btn-red-hover);
+  background-color: var(--btn-orange-hover);
 }
 
 .btn-red:active {
-  background-color: var(--btn-red-active);
+  background-color: var(--btn-orange-active);
 }
 
 .btn-blue {
@@ -141,6 +141,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 
 .footer {
+  color: var(--font);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -151,14 +152,4 @@ input[type='number']::-webkit-outer-spin-button {
   width: 100%;
   padding: 10px;
   font-size: 20px;
-}
-
-.fa-github {
-  color: var(--font);
-  font-size: 24px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
 }
