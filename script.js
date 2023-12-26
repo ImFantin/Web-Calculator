@@ -15,6 +15,8 @@ function Calculator() {
       this.firstNumber = parseFloat(this.display);
       this.operator = newOperator;
       this.display = '';
+    } else if (this.operator === newOperator) {
+      return;
     } else {
       this.firstNumber = parseFloat(this.display);
       this.operator = newOperator;
@@ -22,7 +24,7 @@ function Calculator() {
       this.display = '';
     }
   };
-
+  
   // Perform the operation
   this.operate = function() {
     switch (this.operator) {
@@ -43,7 +45,7 @@ function Calculator() {
   this.calculateResult = function() {
     if (this.operator && this.firstNumber !== undefined && this.display !== '') {
       this.secondNumber = parseFloat(this.display);
-      const result = this.operate(); // Calling the renamed function
+      let result = this.operate();
       this.display = result.toString();
       this.firstNumber = result;
       this.secondNumber = undefined;
