@@ -17,11 +17,13 @@ function Calculator() {
       this.display = '';
     } else if (this.operator === newOperator) {
       return;
-    } else {
+    } else if (this.display !== '') {
       this.firstNumber = parseFloat(this.display);
       this.operator = newOperator;
       this.updateDisplay();
       this.display = '';
+    } else {
+      this.operator = newOperator;
     }
   };
   
